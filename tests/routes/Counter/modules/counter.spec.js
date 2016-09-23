@@ -1,3 +1,4 @@
+/* eslint no-undefined:0 */
 import {
   COUNTER_INCREMENT,
   increment,

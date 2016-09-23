@@ -1,3 +1,5 @@
+/* eslint no-sync:1 */
+
 const fs = require('fs-extra')
 const debug = require('debug')('app:bin:compile')
 const webpackCompiler = require('../build/webpack-compiler')
@@ -22,7 +24,7 @@ const compile = () => {
     })
     .catch((err) => {
       debug('Compiler encountered an error.', err)
-      process.exit(1)
+      throw new Error('Compiler encountered an error.')
     })
 }
 

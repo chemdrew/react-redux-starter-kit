@@ -1,6 +1,7 @@
 {
   "parser": "babel-eslint",
   "extends": [
+    "./node_modules/godaddy-style/dist/.eslintrc",
     "standard",
     "standard-react"
   ],

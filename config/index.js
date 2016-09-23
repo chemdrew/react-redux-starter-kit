@@ -1,4 +1,5 @@
 /* eslint key-spacing:0 spaced-comment:0 */
+/* eslint no-process-env:0 */
 const path = require('path')
 const debug = require('debug')('app:config')
 const argv = require('yargs').argv
